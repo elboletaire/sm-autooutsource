@@ -1,0 +1,35 @@
+return PlaceObj('ModDef', {
+	'title', "AutoOutsourcing - Research auto-outsource",
+	'description', "Automatically outsource research once the previous has finished and you have at least the minimum defined funds.\n\nRight now it's automatically enabled as soon as you start outsourcing and only gets disabled if you don't have enough money to maintain the previous outsourcing contract (+4B).\n\nMaybe some day I'll add some UI, but for now it's as is. You'll have to entirely disable the mod if you don't want to use it.",
+	'image', "research_lab.png",
+	'last_changes', "Ensure outsource amount is updated when increasing outsource points. Also show notifications either when re-outsourcing or when disabling it.\n\nVersion 1.1 & 1.2 just try to remove an unnecessary folder from the mod, which was increasing its filesize a lot.",
+	'ignore_files', {
+		"*.git/*",
+		"*.svn/*",
+		"SurvivingMars/*",
+	},
+	'dependencies', {
+		PlaceObj('ModDependency', {
+			'id', "ChoGGi_AddMathFunctions",
+			'title', "math. Functions",
+			'version_minor', 6,
+		}),
+	},
+	'id', "HY1Eq2",
+	'steam_id', "1745481507",
+	'pops_desktop_uuid', "d67cd575-05cd-4d73-8a66-153cd624376f",
+	'pops_any_uuid', "7ae61c4b-73f1-4085-83cb-09eee9026e9d",
+	'author', "El Boletaire",
+	'version_major', 1,
+	'version_minor', 2,
+	'version', 53,
+	'lua_revision', 233360,
+	'saved_with_revision', 249143,
+	'code', {
+		"Code/Script.lua",
+	},
+	'saved', 1602426498,
+	'TagGameplay', true,
+	'TagResearch', true,
+	'TagTools', true,
+})
